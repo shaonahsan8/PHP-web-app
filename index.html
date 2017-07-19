@@ -55,8 +55,14 @@
               <h2 class="bnr-sub-title">Starting a new journey!!</h2>
               <p class="bnr-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip <br>ex ea commodo consequat.</p>
               <div class="brn-btn">
-                <a href="#" class="btn btn-download">Register Now!</a>
-                <a href="#" class="btn btn-more">Subscribe for More!</a>
+                <button type="button" class="btn btn-download" data-toggle="modal" data-target="#formModalRegister"><i class="" aria-hidden="true"></i>
+                  Register Now!
+                </button>
+                <!-- <a href="#" class="btn btn-download">Register Now!</a> -->
+                <button type="button" class="btn btn-more" data-toggle="modal" data-target="#formModalSubscribe"><i class="" aria-hidden="true"></i>
+                  Subscribe for More!
+                </button>
+                <!-- <a href="#" class="btn btn-more">Subscribe for More!</a> -->
               </div>
               <div class="overlay-detail">
                 <a href="#feature"><i class="fa fa-angle-down"></i></a>
@@ -403,6 +409,89 @@
     </footer>
     <!---->
   </div>
+<!--MODAL for registration-->
+  <div class="modal fade" id="formModalRegister" tabindex="-1" role="dialog" aria-labelledby="formModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <form method="post" action="/add">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="formModalLabel">Register</h4>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label for="">First Name</label>
+              <input type="text" class="form-control" name="fname" value="">
+            </div>
+            <div class="form-group">
+              <label for="">Last Name</label>
+              <input type="text" class="form-control" name="lname" value="">
+            </div>
+            <div class="form-group">
+              <label for="">Address</label>
+              <textarea class="form-control" name="address" ></textarea>
+            </div>
+            <div class="form-group">
+              <label for="">City</label>
+              <input type="text" class="form-control" name="city" value="">
+            </div>
+            <div class="form-group">
+              <label for="">State</label>
+              <input type="text" class="form-control" name="state" value="">
+            </div>
+            <div class="form-group">
+              <label for="">Zip</label>
+              <input type="number" class="form-control" name="zip" value="">
+            </div>
+            <div class="form-group">
+              <label for="">Date Of Birth</label>
+              <input type="datetime" class="form-control" name="dob" value="">
+            </div>
+            <div class="form-group">
+              <label for="">Email</label>
+              <input type="text" class="form-control" name="email" value="">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <input type="submit" class="btn btn-info" value="Save"/>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!--MODAL for Subscribe-->
+    <div class="modal fade" id="formModalSubscribe" tabindex="-1" role="dialog" aria-labelledby="formModalLabel">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <form method="post" action="/add">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="formModalLabel">Subscribe</h4>
+            </div>
+            <div class="modal-body">
+              <div class="form-group">
+                <label for="">First Name</label>
+                <input type="text" class="form-control" name="fname" value="">
+              </div>
+              <div class="form-group">
+                <label for="">Last Name</label>
+                <input type="text" class="form-control" name="lname" value="">
+              </div>
+              <div class="form-group">
+                <label for="">Email</label>
+                <input type="text" class="form-control" name="email" value="">
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              <input type="submit" class="btn btn-info" value="Save"/>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
