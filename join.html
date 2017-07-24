@@ -16,25 +16,13 @@
 
   </head>
   <body>
-<!-- facebook like  -->
-<!-- <div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));
-</script> -->
+
+
     <div class="loader"></div>
     <div id="myDiv">
     <!--HEADER-->
-
     <div class="header">
       <div class="bg-color">
-        <iframe style="width: 300px; height: 20px;" frameborder="0" scrolling="no" width="320" height="240" src="http://platform.twitter.com/widgets/follow_button.html?screen_name=kosheradvantage"  align="" id="twitter-share-btn"></iframe>
-        <iframe style="border:none;overflow:hidden" width="117" height="46"  scrolling="no" frameborder="0" src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FKosherAdvantage%2F&width=117&layout=button_count&action=like&size=small&show_faces=true&share=true&height=46&appId"  allowTransparency="true" align="" id="fb-like-btn"></iframe>
-      
         <header id="main-header">
         <nav class="navbar navbar-default navbar-fixed-top">
           <div class="container">
@@ -64,25 +52,68 @@
         <div class="wrapper">
         <div class="container">
           <div class="row">
-            <div class="banner-info text-center wow fadeIn delay-05s">
-              <h1 class="bnr-title">We are at Kosher<span> advantage</span></h1>
+            <div class="banner-info text-center wow fadeIn delay-05s col-md-12">
+              <h1 class="bnr-title">You are at Kosher<span> advantage</span></h1>
               <!-- <div class="fb-like" data-href="https://www.facebook.com/HULEDET/" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div> -->
 
-              <!-- <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FKosherAdvantage%2F&width=117&layout=button_count&action=like&size=small&show_faces=true&share=true&height=46&appId" width="117" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" align="" id="fb-like-btn"></iframe>
-              <iframe style="width: 300px; height: 20px;" src="http://platform.twitter.com/widgets/follow_button.html?screen_name=kosheradvantage" frameborder="0" scrolling="no" width="320" height="240" align="" id="twitter-share-btn"></iframe> -->
-
+              <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FKosherAdvantage%2F&width=117&layout=button_count&action=like&size=small&show_faces=true&share=true&height=46&appId" width="117" height="46" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" align="left"></iframe>
+              <iframe style="width: 300px; height: 20px;" src="http://platform.twitter.com/widgets/follow_button.html?screen_name=kosheradvantage" frameborder="0" scrolling="no" width="320" height="240" align="right"></iframe>
               <!-- <a href="https://twitter.com/kosheradvantage" class="twitter-follow-button" data-show-count="false">Follow @kosheradvantage</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script> -->
-              <h2 class="bnr-sub-title">Starting a new journey!!</h2>
-              <p class="bnr-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip <br>ex ea commodo consequat.</p>
-              <div class="brn-btn">
-                <button onclick="setDate()" type="button" class="btn btn-download" data-toggle="modal" data-target="#formModalRegister"><i class="" aria-hidden="true"></i>
-                  Register Now!
-                </button>
-                <!-- <a href="#" class="btn btn-download">Register Now!</a> -->
-                <button type="button" class="btn btn-more" data-toggle="modal" data-target="#formModalSubscribe"><i class="" aria-hidden="true"></i>
-                  Subscribe for More!
-                </button>
-                <!-- <a href="#" class="btn btn-more">Subscribe for More!</a> -->
+<div class="col-md-6">
+  <h2 class="bnr-sub-title">Starting a new journey!!</h2>
+  <p class="bnr-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip <br>ex ea commodo consequat.</p>
+
+
+</div>
+
+              <div class="col-md-6">
+                <form method="post" action="/add">
+                  <div class="">
+                    <h4 class="modal-title" id="formModalLabel">Register</h4>
+                  </div>
+                    <div class="form-group">
+                      <label for="">First Name</label>
+                      <input type="text" class="form-control" name="fname" value="">
+                    </div>
+                    <div class="form-group">
+                      <label for="">Last Name</label>
+                      <input type="text" class="form-control" name="lname" value="">
+                    </div>
+                    <div class="form-group">
+                      <label for="">Address</label>
+                      <textarea class="form-control" name="address" ></textarea>
+                    </div>
+                    <div class="form-group">
+                      <label for="">City</label>
+                      <input type="text" class="form-control" name="city" value="">
+                    </div>
+                    <div class="form-group">
+                      <label for="">State</label>
+                      <input type="text" class="form-control" name="state" value="">
+                    </div>
+                    <div class="form-group">
+                      <label for="">Zip</label>
+                      <input type="number" class="form-control" name="zip" value="">
+                    </div>
+                    <div class="form-group">
+                      <label for="">Date Of Birth</label>
+                      <input type="date" class="form-control" name="dob" value="">
+                    </div>
+                    <div class="form-group">
+                      <label for="">Log in Time( Hidden)</label>
+                      <input onclick="setDate()" id="current-date" type="text" class="form-control" name="login-time" value="">
+                    </div>
+                    <div class="form-group">
+                      <label for="">Email</label>
+                      <input type="email" class="form-control" name="email" value="">
+                    </div>
+                    <div class="form-group">
+                      <label for="">Password</label>
+                      <input type="password" class="form-control" name="password" value="">
+                    </div>
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <input type="submit" class="btn btn-info" value="Save"/>
+                </form>
               </div>
               <div class="overlay-detail">
                 <a href="#feature"><i class="fa fa-angle-down"></i></a>
@@ -93,93 +124,10 @@
         </div>
       </div>
     </div>
-    <!--/ HEADER-->
-    <!---->
-    <section id="feature" class="section-padding wow fadeIn delay-05s">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="wrap-item text-center">
-              <div class="item-img">
-                <img src="img/ser01.png">
-              </div>
-              <h3 class="pad-bt15">Concept One</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="wrap-item text-center">
-              <div class="item-img">
-                <img src="img/ser02.png">
-              </div>
-              <h3 class="pad-bt15">Concept Two</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="wrap-item text-center">
-              <div class="item-img">
-                <img src="img/ser03.png">
-              </div>
-              <h3 class="pad-bt15">Concept three</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div>
-          <!-- <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="wrap-item text-center">
-              <div class="item-img">
-                <img src="img/ser04.png">
-              </div>
-              <h3 class="pad-bt15">Secure</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            </div>
-          </div> -->
-        </div>
-      </div>
-    </section>
+
     <!---->
     <!---->
-    <section id="service" class="section-padding wow fadeInUp delay-05s">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h2 class="service-title pad-bt15">What We Do?</h2>
-            <p class="sub-title pad-bt15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p>
-            <hr class="bottom-line">
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <h3><span>P</span>romote Your Bussiness</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="">learn more...</a>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <h3><span>G</span>ift Codes For Kosher Restaurents</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="">learn more...</a>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <h3><span>E</span>xclusive Member Parks</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="">learn more...</a>
-            </div>
-          </div>
-          <div class="col-md-3 col-sm-6 col-xs-12">
-            <div class="service-item">
-              <h3><span>C</span>irtify Our Partners</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-              <a href="">Learn more...</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!---->
-    <!---->
+
     <!---->
     <!---->
     <section id="partners" class="section-padding wow fadeInUp delay-05s">
@@ -262,128 +210,9 @@
     </section>
     <!---->
     <!---->
-    <section id="testimonial" class="wow fadeInUp delay-05s">
-      <div class="bg-testicolor">
-        <div class="container section-padding">
-        <div class="row">
-          <div class="testimonial-item">
-            <ul class="bxslider">
-              <li>
-                <blockquote>
-                  <img src="img/thumb.png" class="img-responsive">
-                  <p>Come a day there won't be room for naughty men like us to slip about at all. This job goes south, there well may not be another. </p>
-                </blockquote>
-                <small>Shaun Paul, Client</small>
-              </li>
-              <li>
-                <blockquote>
-                  <img src="img/thumb.png" class="img-responsive">
-                  <p>So here is us, on the raggedy edge. Don't push me, and I won't push you. </p>
-                </blockquote>
-                <small>Marry Smith, Client</small>
-              </li>
-              <li>
-                <blockquote>
-                  <img src="img/thumb.png" class="img-responsive">
-                  <p>Come a day there won't be room for naughty men like us to slip about at all. This job goes south, there well may not be another.</p>
-                </blockquote>
-                <small>Vivek Singh, Client</small>
-              </li>
-              <li>
-                <blockquote>
-                  <img src="img/thumb.png" class="img-responsive">
-                  <p>So here is us, on the raggedy edge. Don't push me, and I won't push you.</p>
-                </blockquote>
-                <small>John Doe, Client</small>
-              </li>
-            </ul>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
+
     <!---->
-    <section id="our-stories" class="section-padding wow fadeInUp delay-05s">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12 text-center">
-            <h2 class="service-title pad-bt15">Latest stories from Kosher Advantage</h2>
-            <div class="brn-btn">
-              <button type="button" class="btn btn-download" data-toggle="modal" data-target="#formModalRegister"><i class="" aria-hidden="true"></i>
-                Share with Friends & Family!
-              </button>
-              <!-- <a href="#" class="btn btn-download">Register Now!</a> -->
-              <button type="button" class="btn btn-more" data-toggle="modal" data-target="#formModalSubscribe"><i class="" aria-hidden="true"></i>
-                Send Gift!
-              </button>
-              <!-- <a href="#" class="btn btn-more">Subscribe for More!</a> -->
-            </div>
-            <p class="sub-title pad-bt15">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore magna aliqua.</p>
-            <hr class="bottom-line">
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="our-stories-sec">
-              <div class="our-stories-img">
-                <a href="">
-                  <img src="img/blog01.jpg" class="img-responsive">
-                </a>
-              </div>
-              <div class="our-stories-info">
-                <h2>This is Lorem ipsum heading.</h2>
-                <div class="our-stories-comment">
-                    <p>Posted In: <span>Legal Advice</span></p>
-                    <p>
-                      <span><a href="#"><i class="fa fa-comments"></i></a> 15</span>
-                      <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
-                </div>
-                <p>We cannot expect people to have respect for laws and orders until we teach respect to those we have entrusted to enforce those laws all the time. we always want to help people cordially.</p>
-                <a href="" class="read-more">Read more →</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="our-stories-sec">
-              <div class="our-stories-img">
-                <a href="">
-                  <img src="img/blog02.jpg" class="img-responsive">
-                </a>
-              </div>
-              <div class="our-stories-info">
-                <h2>This is Lorem ipsum heading.</h2>
-                <div class="our-stories-comment">
-                    <p>Posted In: <span>Legal Advice</span></p>
-                    <p>
-                      <span><a href="#"><i class="fa fa-comments"></i></a> 15</span>
-                      <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
-                </div>
-                <p>We cannot expect people to have respect for laws and orders until we teach respect to those we have entrusted to enforce those laws all the time. we always want to help people cordially.</p>
-                <a href="" class="read-more">Read more →</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 col-xs-12">
-            <div class="our-stories-sec">
-              <div class="our-stories-img">
-                <a href="">
-                  <img src="img/blog03.jpg" class="img-responsive">
-                </a>
-              </div>
-              <div class="our-stories-info">
-                <h2>This is Lorem ipsum heading.</h2>
-                <div class="our-stories-comment">
-                    <p>Posted In: <span>Legal Advice</span></p>
-                    <p>
-                      <span><a href="#"><i class="fa fa-comments"></i></a> 15</span>
-                      <span><a href="#"><i class="fa fa-eye"></i></a> 11</span></p>
-                </div>
-                <p>We cannot expect people to have respect for laws and orders until we teach respect to those we have entrusted to enforce those laws all the time. we always want to help people cordially.</p>
-                <a href="" class="read-more">Read more →</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+
     <!---->
     <section id="contact" class="section-padding wow fadeInUp delay-05s">
       <div class="container">

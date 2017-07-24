@@ -1,4 +1,5 @@
-function myFunction() {
+function setDate() {
     var x = document.getElementById("myLocalDate").value;
-    document.getElementById("demo").innerHTML = x;
+  //  var x = new Date(new Date().getTime()).toLocaleString();
+    document.getElementById("current-date").innerHTML = x;
 }

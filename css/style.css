@@ -2,12 +2,39 @@
 body {
 	line-height: 1.4;
 	font-family: 'Roboto', sans-serif;
-    color: #67696c;
-    font-size: 16px;
-    font-weight: 300;
-    letter-spacing: 0.5px;
-    overflow-x: hidden;
+  color: #67696c;
+  font-size: 16px;
+	font-weight: 300;
+  letter-spacing: 0.5px;
+  overflow-x: hidden;
 }
+/*iframe {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	right: 10px;
+	width:147px;
+
+}*/
+
+#facebook-like-btn {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	right: 110px;
+	width:100px;
+	}
+#twitter-share-btn {
+	position: absolute;
+	display: block;
+	top: 0;
+	bottom: 0;
+	right: 10px;
+	width:100px;
+	}
+/*div { position: absolute; display: block; top: 0; bottom: 0; left: 200px; width:100px;  border: 1px solid black;}*/
 /*h3, span{
 	text-emphasis-color: lightblue;
 }*/
